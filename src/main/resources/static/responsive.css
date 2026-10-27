@@ -1,0 +1,9 @@
+/* Additional constraints to keep the dashboard usable on laptop widths. */
+.dashboard-grid{grid-template-columns:minmax(0,1.9fr) minmax(260px,1fr)}
+.dashboard-grid>section,.dashboard-grid>aside{min-width:0}
+.dashboard-grid th,.dashboard-grid td{padding:14px}
+.dashboard-grid td:first-child{min-width:190px}
+.dashboard-grid td:last-child{min-width:100px}
+@media(max-width:1050px){.dashboard-grid{grid-template-columns:minmax(0,1fr)}}
+.pagination{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:16px;color:#7b869a;font-size:12px;flex-wrap:wrap}.pagination>div{display:flex;gap:8px}.pagination button:disabled{opacity:.45;cursor:not-allowed}
+

@@ -1,0 +1,7 @@
+target
+data
+.env
+*.log
+.git
+docs/screenshots
+
