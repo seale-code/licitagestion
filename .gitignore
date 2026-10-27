@@ -1,0 +1,8 @@
+target/
+data/
+.env
+application-local.properties
+*.log
+.idea/
+.vscode/
+.github/modernize/
