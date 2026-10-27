@@ -187,9 +187,6 @@ mvn clean verify
 
 Pruebas unitarias del tiempo y análisis extractivo, y pruebas de integración Spring/MockMvc: autenticación/CSRF, permisos, descargas privadas, aislamiento de chat, edición concurrente, checklist/evidencia, tareas, revisión humana, PDF real, archivos inválidos, alertas y WhatsApp simulado. La última verificación registrada de la entrega 2.0.0 aprobó 26 pruebas con H2 y las mismas 26 con PostgreSQL 17.11 real; las pruebas añadidas después de esa verificación siguen pendientes de ejecutar con JDK 25. No se transmiten mensajes ni se llama a un LLM real desde las pruebas. Resultados y pasos para repetirlas: [`docs/verificacion.md`](docs/verificacion.md).
 
-## Qué pasó con el MVP anterior
-
-El proyecto Flask se conserva en la carpeta hermana `licitamatch`. Esta versión vive en `licitagestion`; usa otra base y otro puerto. **No se hizo una migración automática de los datos Flask**, porque cambiaron permisos, estados y modelo de trabajo. Para datos reales prepara un importador revisable que asigne responsables/accesos explícitamente; no conviertas un catálogo compartido en documentos privados por suposición.
 
 ## Referencias oficiales
 
